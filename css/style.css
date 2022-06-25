@@ -23,7 +23,13 @@ html {
 body {
     background: #a2a09b;
     background: -webkit-linear-gradient(315deg, hsla(236.6, 0%, 53.52%, 1) 0, hsla(236.6, 0%, 53.52%, 0) 70%), -webkit-linear-gradient(65deg, hsla(220.75, 34.93%, 26.52%, 1) 10%, hsla(220.75, 34.93%, 26.52%, 0) 80%), -webkit-linear-gradient(135deg, hsla(46.42, 36.62%, 83.92%, 1) 15%, hsla(46.42, 36.62%, 83.92%, 0) 80%), -webkit-linear-gradient(205deg, hsla(191.32, 50.68%, 56.45%, 1) 100%, hsla(191.32, 50.68%, 56.45%, 0) 70%);
-    background: linear-gradient(135deg, hsla(236.6, 0%, 53.52%, 1) 0, hsla(236.6, 0%, 53.52%, 0) 70%), linear-gradient(25deg, hsla(220.75, 34.93%, 26.52%, 1) 10%, hsla(220.75, 34.93%, 26.52%, 0) 80%), linear-gradient(315deg, hsla(46.42, 36.62%, 83.92%, 1) 15%, hsla(46.42, 36.62%, 83.92%, 0) 80%), linear-gradient(245deg, hsla(191.32, 50.68%, 56.45%, 1) 100%, hsla(191.32, 50.68%, 56.45%, 0) 70%)
+    background: linear-gradient(135deg, hsla(236.6, 0%, 53.52%, 1) 0, hsla(236.6, 0%, 53.52%, 0) 70%), linear-gradient(25deg, hsla(220.75, 34.93%, 26.52%, 1) 10%, hsla(220.75, 34.93%, 26.52%, 0) 80%), linear-gradient(315deg, hsla(46.42, 36.62%, 83.92%, 1) 15%, hsla(46.42, 36.62%, 83.92%, 0) 80%), linear-gradient(245deg, hsla(191.32, 50.68%, 56.45%, 1) 100%, hsla(191.32, 50.68%, 56.45%, 0) 70%);
+}
+
+.main-container {
+    background-color: white;
+    padding: 2rem 3rem;
+    border-radius: 10px;
 }
 
 a {
@@ -90,7 +96,7 @@ p::first-letter {
 
 h1 {
     text-align: center;
-    color: #fff;
+    color: #000;
     font-size: 24px !important
 }
 
@@ -224,11 +230,11 @@ table td {
 }
 
 table td:first-child {
-    font-weight: 700
+    font-weight: 700;
 }
 
 .lite {
-    background: #fff
+    background: #fff;
 }
 
 .lite input[type=password],
@@ -239,7 +245,7 @@ table td:first-child {
 .lite .info,
 .lite h1,
 .lite table td {
-    color: #444
+    color: #444;
 }
 
 .lite input[type=password]:focus,
@@ -249,25 +255,25 @@ table td:first-child {
 }
 
 .dark {
-    background: #343434
+    background: #343434;
 }
 
 .dark input[type=submit] {
-    background: #dc3a41
+    background: #dc3a41;
 }
 
 .dark input[type=submit]:focus,
 .dark input[type=submit]:hover {
-    background: #b92f35
+    background: #b92f35;
 }
 
 .dark input[type=password],
 .dark input[type=text] {
-    background-color: #fff
+    background-color: #fff;
 }
 
 .dark a {
-    color: #dc3a41
+    color: #dc3a41;
 }
 
 .dark table td {
