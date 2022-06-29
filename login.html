@@ -42,34 +42,35 @@
         <div class="main">
             <div class="wrap animated fadeIn">
                 <div class="main-container">
-                    <form name="login" action="$(link-login-only)" method="post" $(if chap-id)
-                        onSubmit="return doLogin()" $(endif)>
-                        <img src="./img/godaam_logo.png" alt="Godaam Logo" width="350" height="auto" />
-                        <input type="hidden" name="dst" value="$(link-orig)" />
-                        <input type="hidden" name="popup" value="true" />
-                        <p class="info $(if error)alert$(endif)">
-                            $(if error == "")Please log in to use the internet hotspot service $(if trial ==
-                            'yes')<br />Free trial available, <a
-                                href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)">click
-                                here</a>.$(endif)
-                            $(endif)
-
-                            $(if error)$(error)$(endif)
-                        </p>
-                        <label>
-                            <img class="ico" src="img/user.svg" alt="#" />
-                            <input name="username" type="text" value="$(username)" placeholder="Username" />
-                        </label>
-
-                        <label>
-                            <img class="ico" src="img/password.svg" alt="#" />
-                            <input name="password" type="password" placeholder="Password" />
-                        </label>
-
-                        <input type="submit" value="Connect" />
-
-                    </form>
-                    <p class="info bt">Powered by MikroTik RouterOS</p>
+                    <img src="./img/logo.svg" alt="Godaam Logo" />
+                    <div class="form-container">
+                        <form name="login" action="$(link-login-only)" method="post" $(if chap-id)
+                            onSubmit="return doLogin()" $(endif)>
+                            <input type="hidden" name="dst" value="$(link-orig)" />
+                            <input type="hidden" name="popup" value="true" />
+                            <p class="info $(if error)alert$(endif)">
+                                $(if error == "")Please log in to use the internet hotspot service $(if trial ==
+                                'yes')<br />Free trial available, <a
+                                    href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)">click
+                                    here</a>.$(endif)
+                                $(endif)
+    
+                                $(if error)$(error)$(endif)
+                            </p>
+                            <label>
+                                <img class="ico" src="img/user.svg" alt="#" />
+                                <input name="username" type="text" value="$(username)" placeholder="Username" />
+                            </label>
+    
+                            <label>
+                                <img class="ico" src="img/password.svg" alt="#" />
+                                <input name="password" type="password" placeholder="Password" />
+                            </label>
+    
+                            <input type="submit" value="Connect" />
+    
+                        </form>
+                    </div>
                 </div>
 
 
